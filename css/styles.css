@@ -1,0 +1,76 @@
+/* CSS RESET */
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* MOBILE VIEWPORT */
+.tab-desk, #menu-links {
+  display: none;
+}
+
+/* MOBILE NAV */
+.mobile-nav a {
+  text-align: center;
+  text-decoration: none;
+  display: block;
+  font-size: 2em;
+}
+
+.mobile-nav a.menu-icon {
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.menu-icon div {
+  height: 50px;
+  width: 50px;
+}
+
+
+
+/* MEDIA QUERY FOR TABLET */
+@media screen and (min-width: 500px), print {
+
+  /* show tab-desk class, hide mobile class and mobile nav */
+  .tab-desk {
+    display: block;
+  }
+
+  .mobile, .mobile-nav {
+    display: none;
+  }
+
+  /* TAB DESK NAV */
+  nav ul {
+    list-style-type: none;
+    text-align: center;
+  }
+
+  nav li {
+    display: inline-block;
+  }
+
+  nav li a {
+    display: block;
+    text-align: center;
+    text-decoration: none;
+  }
+}
+
+/* MEDIA QUERY FOR PRINT */
+@media print {
+  body {
+    background-color: #fff;
+    color: #000;
+  }
+}
