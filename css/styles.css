@@ -6,9 +6,51 @@
   box-sizing: border-box;
 }
 
+/* CONSTANTS */
 img {
   max-width: 100%;
   display: block;
+}
+
+header img {
+  margin: 0 auto;
+}
+
+footer {
+  padding: 2% 1%;
+}
+
+/* COLOR THEME */
+body {
+  background-color: #F0F7D4;
+  color: #092834;
+  font-family: copperplate;
+}
+
+header {
+  background-color: #66B032;
+}
+
+nav {
+  background-color: #092834;
+}
+
+.mobile-nav a {
+  color: #B2D732;
+}
+
+nav li a {
+  color: #B2D732;
+}
+
+nav li a:hover {
+  color: #092834;
+  background-color: #B2D732;
+}
+
+footer {
+  background-color: #66B032;
+  color: #F0F7D4;
 }
 
 /* MOBILE VIEWPORT */
@@ -22,6 +64,8 @@ img {
   text-decoration: none;
   display: block;
   font-size: 2em;
+  padding: 2%;
+  font-weight: bold;
 }
 
 .mobile-nav a.menu-icon {
@@ -29,6 +73,7 @@ img {
   position: absolute;
   right: 0;
   top: 0;
+  padding: 2%;
 }
 
 .menu-icon div {
@@ -41,8 +86,12 @@ img {
 /* MEDIA QUERY FOR TABLET */
 @media screen and (min-width: 500px), print {
 
-  /* show tab-desk class, hide mobile class and mobile nav */
+  /* show tab-desk class, hide mobile, mobile nav, and desktop classes */
   .tab-desk {
+    display: block;
+  }
+
+  .tablet {
     display: block;
   }
 
@@ -50,7 +99,11 @@ img {
     display: none;
   }
 
-  /* TAB DESK NAV */
+  .desktop {
+    display: none;
+  }
+
+  /* TABLET NAV */
   nav ul {
     list-style-type: none;
     text-align: center;
@@ -58,12 +111,27 @@ img {
 
   nav li {
     display: inline-block;
+    font-size: 1.4em;
   }
 
   nav li a {
     display: block;
-    text-align: center;
     text-decoration: none;
+    padding: 0.25em 1.25em;
+    font-weight: bold;
+  }
+}
+
+/* MEDIA QUERY FOR DESKTOP */
+@media screen and (min-width: 700px), print {
+
+  /* DESKTOP NAV */
+  nav li {
+    font-size: 1.75em;
+  }
+
+  nav li a {
+    padding: 0.5em 1.5em;
   }
 }
 
