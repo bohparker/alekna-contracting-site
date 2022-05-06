@@ -6,7 +6,21 @@
   box-sizing: border-box;
 }
 
+#menu-links a {
+  margin: 0;
+}
+
 /* CONSTANTS */
+#wrapper {
+  width: 100%;
+}
+
+main {
+  display: block;
+  margin: auto;
+  max-width: 900px;
+}
+
 img {
   max-width: 100%;
   display: block;
@@ -17,14 +31,17 @@ header img {
 }
 
 footer {
-  padding: 2% 1%;
+  display: block;
+  font-size: 0.8em;
+  padding: 2% 2%;
+  width: 100%;
 }
 
 /* COLOR THEME */
 body {
   background-color: #F0F7D4;
   color: #092834;
-  font-family: copperplate;
+  font-family: 'Fjalla One', Verdana;
 }
 
 header {
@@ -71,9 +88,10 @@ footer {
 .mobile-nav a.menu-icon {
   display: block;
   position: absolute;
+  margin: 0;
   right: 0;
   top: 0;
-  padding: 2%;
+  padding: 1%;
 }
 
 .menu-icon div {
@@ -81,7 +99,36 @@ footer {
   width: 50px;
 }
 
+/* HOME */
+#welcome {
+  display: block;
+  margin: auto;
+  padding: 2%;
+}
 
+#welcome h2, h3 {
+  text-align: center;
+  margin: 2%;
+}
+
+#welcome p {
+  width: 80%;
+  max-width: 500px;
+  margin: 2% auto;
+}
+
+.tel-link {
+  display: block;
+  margin: auto;
+  text-align: center;
+  font-size: 1.2em;
+  text-decoration: none;
+  padding: 2%;
+  width: 60%;
+  border-radius: 5px;
+  background-color: #347B98;
+  color: #F0F7D4;
+}
 
 /* MEDIA QUERY FOR TABLET */
 @media screen and (min-width: 500px), print {
@@ -119,6 +166,11 @@ footer {
     text-decoration: none;
     padding: 0.25em 1.25em;
     font-weight: bold;
+  }
+
+  #email-link {
+    text-decoration: none;
+    color: #66B032;
   }
 }
 
