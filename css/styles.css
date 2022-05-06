@@ -115,6 +115,7 @@ footer {
   width: 80%;
   max-width: 500px;
   margin: 2% auto;
+  text-align: justify;
 }
 
 .tel-link {
