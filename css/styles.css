@@ -37,9 +37,14 @@ header img {
 
 footer {
   display: block;
-  font-size: 0.8em;
-  padding: 2% 2%;
+  font-size: 0.7em;
   width: 100%;
+  padding: 1%;
+  margin-top: 20px;
+}
+
+footer p {
+  text-align: center;
 }
 
 /* COLOR THEME */
@@ -128,8 +133,8 @@ footer {
   text-align: center;
   font-size: 0.8em;
   text-decoration: none;
-  padding: 2%;
-  width: 60%;
+  padding: 4%;
+  width: 65%;
   border-radius: 5px;
   background-color: #347B98;
   color: #F0F7D4;
@@ -160,7 +165,7 @@ footer {
 #review {
   text-align: center;
   background-color: #347B98;
-  padding: 2%;
+  padding: 4%;
   border-radius: 5px;
   color: #F0F7D4;
   min-height: 250px;
@@ -172,6 +177,47 @@ footer {
 
 #text {
   text-align: justify;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: auto;
+}
+
+aside h1 {
+  text-align: center;
+  margin: 2%;
+}
+
+figure {
+  width: 75%;
+  margin: 2% auto;
+}
+
+figure img {
+  border-radius: 3%;
+}
+
+figcaption {
+  font-size: 1.4em;
+  text-align: center;
+  margin: 2%;
+}
+
+#contact {
+  margin: 2%;
+}
+
+#contact h2, h3 {
+  text-align: center;
+  margin: 2%;
+}
+
+.map {
+  display: block;
+  border: 2px solid #092834;
+  width: 95%;
+  margin: 5% auto;
 }
 
 /* MEDIA QUERY FOR REGULAR PHONES */
@@ -191,13 +237,13 @@ footer {
   }
 
   .tel-link {
-    font-size: 1.1em;
+    font-size: 1.2em;
   }
 }
 
 @media screen and (min-width: 420px), print {
   .menu-icon div {
-    font-size: 1.2em;
+    font-size: 1.3em;
   }
 }
 
@@ -247,6 +293,14 @@ footer {
     text-decoration: none;
     color: #66B032;
   }
+
+  aside {
+    grid-column: 1 / span 3;
+  }
+
+  .grid {
+    grid-template-columns: auto auto auto;
+  }
 }
 
 /* MEDIA QUERY FOR DESKTOP */
@@ -263,6 +317,11 @@ footer {
 
   nav li a {
     padding: 0.5em 1.5em;
+  }
+
+  .map {
+    width: 600px;
+    height: 450px;
   }
 }
 
