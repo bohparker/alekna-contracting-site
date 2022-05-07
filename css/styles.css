@@ -13,6 +13,11 @@
 /* CONSTANTS */
 #wrapper {
   width: 100%;
+  min-width: 250px
+}
+
+#hero img {
+  border-radius: 5px;
 }
 
 main {
@@ -91,12 +96,11 @@ footer {
   margin: 0;
   right: 0;
   top: 0;
-  padding: 1%;
+  padding: 0%;
 }
 
 .menu-icon div {
-  height: 50px;
-  width: 50px;
+  font-size: 0.6em;
 }
 
 /* HOME */
@@ -122,13 +126,71 @@ footer {
   display: block;
   margin: auto;
   text-align: center;
-  font-size: 1.2em;
+  font-size: 1em;
   text-decoration: none;
   padding: 2%;
   width: 60%;
   border-radius: 5px;
   background-color: #347B98;
   color: #F0F7D4;
+}
+
+#reviews {
+  width: 75%;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-gap: 2%;
+  margin: 0 auto;
+  padding: 2%;
+}
+
+#left, #right {
+  text-align: center;
+  font-size: 2em;
+  font-weight: bold;
+  height: 50px;
+  color: #66B032;
+  background-color: #F0F7D4;
+}
+
+#left:hover, #right:hover {
+  transform: scale(1.2);
+}
+
+#review {
+  text-align: center;
+  background-color: #347B98;
+  padding: 2%;
+  border-radius: 5px;
+  color: #F0F7D4;
+  min-height: 250px;
+}
+
+#stars {
+  color: gold;
+}
+
+#text {
+  text-align: justify;
+}
+
+/* MEDIA QUERY FOR REGULAR PHONES */
+@media screen and (min-width: 300px), print {
+  .menu-icon div {
+    font-size: 1em;
+  }
+}
+
+@media screen and (min-width: 370px), print {
+  .menu-icon div {
+    font-size: 1.1em;
+  }
+}
+
+@media screen and (min-width: 420px), print {
+  .menu-icon div {
+    font-size: 1.2em;
+  }
 }
 
 /* MEDIA QUERY FOR TABLET */

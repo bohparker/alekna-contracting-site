@@ -15,7 +15,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap" rel="stylesheet">
 </head>
-<body>
+<body onload="reviews()">
 <div id="wrapper">
 
   <!-- MOBILE NAV -->
@@ -60,6 +60,17 @@
       <a class="mobile tel-link" href="mailto:alekna.paul@gmail.com">alekna.paul@gmail.com</a>
     </section>
 
+    <section id="reviews">
+
+      <button id="left" onclick="left()">&#8592;</button>
+      <div id="review">
+        <div id="name"></div>
+        <div id="stars">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+        <div id="text"></div>
+      </div>
+      <button id="right" onclick="right()">&#8594;</button>
+
+    </section>
 
   </main>
 
