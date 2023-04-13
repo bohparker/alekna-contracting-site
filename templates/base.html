@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>{% block title %}{% endblock %}</title>
+  <link rel="stylesheet" href="{{url_for('static', filename='css/styles.css')}}">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- INSERT FAVICON LINKS -->
+  <link rel="shortcut icon" href="{{url_for('static', filename='images/favicon.png')}}">
+  <link rel="icon" type="image/png" sizes="32x32" href="{{url_for('static', filename='images/favicon.png')}}">
+  <link rel="apple-touch-icon" sizes="180x180" href="{{url_for('static', filename='images/favicon.png')}}">
+  <link rel="icon" sizes="192x192" href="{{url_for('static', filename='images/favicon.png')}}">
+  <!-- GOOGLE FONTS -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap" rel="stylesheet">
+  <script type="text/javascript" src="{{url_for('static', filename='scripts/script.js')}}"></script>
+</head>
+
+<body onload="reviews()">
+  <div id="wrapper">
+
+    <!-- MOBILE NAV -->
+    <nav class="mobile-nav">
+      <div id="menu-links">
+        <a href="{{url_for('index')}}">Home</a>
+        <a href="{{url_for('services')}}">Services</a>
+        <a href="{{url_for('portfolio')}}">Portfolio</a>
+        <a href="{{url_for('contact')}}">Contact</a>
+      </div>
+      <a class="menu-icon" onclick="hamburger()">
+        <div>&#9776;</div>
+      </a>
+    </nav>
+
+    <!-- HEADER -->
+    <header>
+      <img src="{{url_for('static', filename='images/banner-color.png')}}" alt="banner">
+    </header>
+
+    <!-- TAB DESK NAV -->
+    <nav class="tab-desk">
+      <ul>
+        <li><a href="{{url_for('index')}}">Home</a></li>
+        <li><a href="{{url_for('services')}}">Services</a></li>
+        <li><a href="{{url_for('portfolio')}}">Portfolio</li>
+        <li><a href="{{url_for('contact')}}">Contact</a></li>
+      </ul>
+    </nav>
+
+    {% block content %}
+    {% endblock %}
+
+    <!-- FOOTER -->
+    <footer>
+
+      <p>&copy; Copyright 2022. All Rights Reserved.</p>
+      <p>Site by BHP Design</p>
+
+    </footer>
+
+  </div> <!-- END WRAPPER -->
+</body>
+
+</html>

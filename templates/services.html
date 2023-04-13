@@ -1,0 +1,48 @@
+{% extends 'base.html' %}
+{% block content %}
+<!-- MAIN -->
+<main class="grid">
+
+  <aside>
+    <h1>Alekna Contracting offers the following services:</h1>
+  </aside>
+
+  <figure>
+    <img src="{{url_for('static', filename='images/basement-remodeling.jpg')}}">
+    <figcaption>Basement Remodeling</figcaption>
+  </figure>
+  <figure>
+    <img src="{{url_for('static', filename='images/carpentry-services.jpg')}}">
+    <figcaption>Carpentry Services</figcaption>
+  </figure>
+  <figure>
+    <img src="{{url_for('static', filename='images/deck-installation.jpg')}}">
+    <figcaption>Deck Installation</figcaption>
+  </figure>
+  <figure>
+    <img src="{{url_for('static', filename='images/drywall.jpg')}}">
+    <figcaption>Drywall</figcaption>
+  </figure>
+  <figure>
+    <img src="{{url_for('static', filename='images/home-renovations.jpg')}}">
+    <figcaption>Home Renovations</figcaption>
+  </figure>
+  <figure>
+    <img src="{{url_for('static', filename='images/installation.jpg')}}">
+    <figcaption>Installation</figcaption>
+  </figure>
+  <figure>
+    <img src="{{url_for('static', filename='images/interior-structural-repairs.jpg')}}">
+    <figcaption>Interior Structural Repairs</figcaption>
+  </figure>
+  <figure>
+    <img src="{{url_for('static', filename='images/remodeling.jpg')}}">
+    <figcaption>Remodeling</figcaption>
+  </figure>
+  <figure>
+    <img src="{{url_for('static', filename='images/fence-installation.jpg')}}">
+    <figcaption>Fence Installation</figcaption>
+  </figure>
+
+</main>
+{% endblock %}

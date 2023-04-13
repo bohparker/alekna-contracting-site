@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+{% block content %}
+<!-- MAIN -->
+<main>
+    <h1>Portfolio</h1>
+    <h3>Click on a project to view more photos</h3>
+    <a href="{{url_for('basement_remodel')}}">
+        <figure>
+            <img src="{{url_for('static', filename='images/portfolio/basement-remodel/2.jpg')}}" alt="Basement Remodel">
+            <figcaption>Basement Remodel</figcaption>
+        </figure>
+    </a>
+
+    <a href="{{url_for('kitchen_remodel')}}">
+        <figure>
+            <img src="{{url_for('static', filename='images/portfolio/kitchen-remodel/3.jpeg')}}" alt="Kitchen Remodel">
+            <figcaption>Kitchen Remodel</figcaption>
+        </figure>
+    </a>
+
+</main>
+{% endblock %}
