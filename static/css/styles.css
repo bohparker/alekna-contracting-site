@@ -143,7 +143,7 @@ h3 {
   display: block;
   margin: auto;
   text-align: center;
-  font-size: 0.8em;
+  font-size: 0.6em;
   text-decoration: none;
   padding: 4%;
   width: 65%;
@@ -260,7 +260,7 @@ print {
   }
 
   .tel-link {
-    font-size: 1em;
+    font-size: 0.8em;
   }
 
   .grid-2 h1 {
@@ -276,7 +276,7 @@ print {
   }
 
   .tel-link {
-    font-size: 1.2em;
+    font-size: 1em;
   }
 }
 
